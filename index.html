@@ -23,6 +23,7 @@
 		<!-- JS Lib -->
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="swfobject.js"></script>
 		<!-- JS -->
 		<script src="js/main.js"></script>
 
@@ -39,12 +40,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<!-- <a class="navbar-brand" href="#">Project name</a> -->
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="#link-home">Home</a>
+							<a href="index.html#link-home">Home</a>
 						</li>
 						<li>
 							<a href="#link-overmij">About me</a>
@@ -68,22 +68,41 @@
 		<!-- Main -->
 		<div class="main">
 
-			<header id="link-home">
-				<h1 class="title">
-					<div class="skew">
-						<div class="skew-text">UX</div>
-					</div>
-					<div class="skew">
-						<div class="skew-text">Design</div>
-					</div>
-				</h1>
-			</header>
+			<div id="header-carousel" class="carousel slide" data-ride="carousel">
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<header id="link-home" style="background-image:url('img/header.jpg');">
+						<h1 class="title">
+							<div class="skew">
+								<div class="skew-text">UX</div>
+							</div>
+							<div class="skew">
+								<div class="skew-text">Design</div>
+							</div>
+						</h1>
+					</header>
+				</div>
+				<div class="item">
+					<header id="link-home" style="background-image:url('img/header.jpg');">
+						<h1 class="title">
+							<div class="skew">
+								<div class="skew-text">UI</div>
+							</div>
+							<div class="skew">
+								<div class="skew-text">Design</div>
+							</div>
+						</h1>
+					</header>
+				</div>
+			</div>
 
 			<!-- Section 1 -->
 			<div class="section section-default" id="link-overmij">
 				<div class="row">
 					<div class="col-sm-6">
-						<img class="img-responsive" src="http://placehold.it/300x300">
+						<img class="img-responsive" src="img/soulia-profile.jpg">
 					</div>
 					<div class="col-sm-6">
 						<h2>Hi.</h2>
@@ -105,43 +124,53 @@
 			<!-- Section 2 -->
 			<div class="section section-default section-right" id="link-werk">
 				<h2 class="hidden-sm hidden-md hidden-lg"><span class="highlight">/</span> Werk</h2>
-				<div class="row">
+				<div class="row row-secondary">
 					<div class="col-sm-6 col-md-3">
-						<div class="block block-default">
-							<div class="block-inner"></div>
-						</div>
-						<h4><span class="highlight">/</span> Photography</h4>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="block block-primary">
-							<div class="block-inner">
-								<h3><span class="highlight">/</span> Bekijk dit project</h3>
+						<a href="detail.html">
+							<div class="block block-default" style="background-image:url('img/03_WORK_1.jpg')">
+								<div class="block-inner"></div>
 							</div>
-						</div>
-						<h4><span class="highlight">/</span> Photography</h4>
+						</a>
+						<h4><span class="highlight">/</span> Title</h4>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<div class="block block-default">
-							<div class="block-inner"></div>
-						</div>
-						<h4><span class="highlight">/</span> Photography</h4>
+						<a href="detail.html">
+							<div class="block block-primary">
+								<div class="block-inner">
+									<h3 class="h2"><span class="highlight">/</span> Bekijk dit project</h3>
+								</div>
+							</div>
+						</a>
+						<h4><span class="highlight">/</span> Title</h4>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<div class="block block-default">
-							<div class="block-inner"></div>
-						</div>
-						<h4><span class="highlight">/</span> Photography</h4>
+						<a href="detail.html">
+							<div class="block block-default" style="background-image:url('img/03_WORK_3.jpg')">
+								<div class="block-inner"></div>
+							</div>
+						</a>
+						<h4><span class="highlight">/</span> Title</h4>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="detail.html">
+							<div class="block block-default" style="background-image:url('img/03_WORK_4.jpg')">
+								<div class="block-inner"></div>
+							</div>
+						</a>
+						<h4><span class="highlight">/</span> Title</h4>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-md-6">
 						<p>De meest recente projecten kunnen helaas niet op mijn portfolio worden geplaatst, wel benieuwd? Ik kom deze graag een keer laten zien! Neem <a href="#link-contact">contact</a> met me op.</p>
 					</div>
 				</div>
 			</div>
 
 			<!-- Section 3 -->
-			<div class="section section-secondary" id="link-fotografie"></div>
+			<div class="section section-secondary" id="link-fotografie">
+				<div id="flashcontent">AutoViewer requires JavaScript and the Flash Player. <a href="http://www.macromedia.com/go/getflashplayer/">Get Flash here.</a> </div>
+			</div>
 
 			<!-- Section 4 -->
 			<div class="section section-default" id="link-expertise">
@@ -151,31 +180,35 @@
 							<i class="fa fa-user"></i>
 						</span>
 						<h3><span class="highlight">/</span> User Experience Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+						<p class="hidden-xs">User experience design is één van de belangrijkste factoren als het aankomt op een goede gebruiksvriendelijke website. Ten eerste moet er goed nagedacht worden over het doel van de website, welke doelgroep ermee bereikt wordt en hoe de gebruiker denkt. Vervolgens moet er een website ontwikkeld worden, gebaseerd op human centured design. En tot slot moet de website goed getest worden.</p>
+						<p class="hidden-sm hidden-md hidden-lg">User experience design is een belangrijke factoor voor een goede gebruiksvriendelijke website. Het begint bij het doel van de website, welke doelgroep ermee bereikt wordt en hoe de gebruiker denkt. Tot slot is het belangrijk dat de website goed wordt getest.</p>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<span class="icon icon-primary">
 							<i class="fa fa-television"></i>
 						</span>
 						<h3><span class="highlight">/</span> Visual Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+						<p class="hidden-xs">Om te beginnen kunnen er al veel designkeuzes worden gemaakt door creative concepting. Aan de hand van dit concept kan ik in Adobe Photoshop mooie webdesigns maken, waarbij het belangrijk is dat zowel de totale look and feel  als de vormgeving van elk uniek element klopt bij de behoeftes van de eindgebruiker. Hierbij is het belangrijk dat de doelgroep continue betrokken is bij het designproces.</p>
+						<p class="hidden-sm hidden-md hidden-lg">Met creative concepting kunnen er al veel designkeuzes worden gemaakt. Aan de hand vandit concept kan ik in Photoshop webdesigns maken, waarbij het belangrijk is dat elk uniek element en de totale look &amp; feel klopt bij de behoeftes van de eindgebruiker. De doelgroep moet hier continue bij betrokken worden.</p>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<span class="icon icon-primary">
 							<i class="fa fa-camera"></i>
 						</span>
 						<h3><span class="highlight">/</span> Photography</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+						<p class="hidden-xs">Tegenwoordig ben ik me steeds meer aan het ontwikkelen op gebied van fotografie. Ik heb eind 2015 een Nikon  aangeschaft, waarmee ik er regelmatig een dagje op uit trek om wat foto’s te schieten. Ik wil me de komende tijd voornamelijk richten op potretfotografie, omdat ik gezichtsuitdrukkingen en emoties heel interessant vindt.</p>
+						<p class="hidden-sm hidden-md hidden-lg">Eind 2015 heb ik een Nikon  aangeschaft, waarmee ik er regelmatig een dagje op uit trek. Ik wil me de komende tijd voornamelijk richten op potretfotografie, omdat ik gezichtsuitdrukkingen en emoties heel interessant vindt.
+						</p>
 					</div>
 				</div>
 			</div>
 
 			<footer class="section-secondary text-center" id="link-contact">
-				<h2>soulia_moor@hotmail.com</h2>
-				<span class="icon icon-default"><i class="fa fa-pinterest"></i></span>
-				<span class="icon icon-default"><i class="fa fa-linkedin"></i></span>
-				<span class="icon icon-default"><i class="fa fa-facebook"></i></span>
-			</footer>
+                <h2>soulia_moor@hotmail.com</h2>
+                <a href="http://www.pinterest.com"><span class="icon icon-default"><i class="fa fa-pinterest"></i></span></a>
+                <a href="http://www.linkedin.com"><span class="icon icon-default"><i class="fa fa-linkedin"></i></span></a>
+                <a href="http://www.facebook.com"><span class="icon icon-default"><i class="fa fa-facebook"></i></span></a>
+            </footer>
 
 		</div>
 
