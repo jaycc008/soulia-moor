@@ -36,7 +36,7 @@ footer { background-image:url('../img/footer.jpg'); }
 .section-secondary { background-color:#000000; }
 .section-default { background-color:#ffffff; }
 
-.section-right { padding-right:0px; }
+.section-right { padding-right:15px; }
 
 /* Blocks */
 
