@@ -12,6 +12,8 @@
 
 		<title>Soulia Moor</title>
 
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- CSS Lib -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,46 +30,47 @@
 	<body>
 
 		<!-- Nagivation -->
-		<div class="navigation">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- <a class="navbar-brand" href="#">Project name</a> -->
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">Werk</a>
-						</li>
-						<li>
-							<a href="#">Fotografie</a>
-						</li>
-						<li>
-							<a href="#">Expertises</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-
+		<nav>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#">Project name</a> -->
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul id="sidebar-nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Werk</a>
+					</li>
+					<li>
+						<a href="#">Fotografie</a>
+					</li>
+					<li>
+						<a href="#">Expertises</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<!-- Main -->
 		<div class="main">
 
 			<header>
 				<h1 class="title">
-					<span>UX</span>
-					<span>Design</span>
+					<div class="skew">
+						<div class="skew-text">UX</div>
+					</div>
+					<div class="skew">
+						<div class="skew-text">Design</div>
+					</div>
 				</h1>
 			</header>
 
@@ -79,9 +82,17 @@
 					</div>
 					<div class="col-sm-6">
 						<h2>Hi.</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-						<a class="btn btn-primary">Bekijk mijn werk</a>
-						<a class="btn btn-default">Bekijk mijn expertises</a>
+						<p>Leuk dat je mijn portfolio bezoekt! Mijn naam is Soulia Moor, ik kom uit Nootdorp en ik ben een UX Designer met de meeste ervaring in visual design. Naast het ontwerpen van websites en andere multimedia, vind ik het super leuk om te fotograferen! Bij expertises kunt u hier alles over lezen.</p>
+						<a class="btn btn-primary skew">
+							<div class="skew-text">
+								Bekijk mijn werk
+							</div>
+						</a>
+						<a class="btn btn-default skew">
+							<div class="skew-text">
+								Bekijk mijn expertises
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
