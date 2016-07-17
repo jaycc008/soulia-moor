@@ -96,7 +96,7 @@ ul#sidebar-nav li.active {
 }
 
 ul#sidebar-nav li a{color:#FFF;text-decoration:none;}
-ul#sidebar-nav li:hover{background-color: #4bb3aa;}
+ul#sidebar-nav li:hover a { color: #4bb3aa; }
 
 /* Text */
 
@@ -219,13 +219,13 @@ Media Queries / Desktop First
 =================*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px), @media only screen and (max-height : 700px) {
     nav{
         height:50px;
     }
 
     .main{
-        margin-left: 50px;
+        margin-left: 0;
     }
 
     ul#sidebar-nav li {
