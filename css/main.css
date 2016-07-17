@@ -31,7 +31,7 @@ header, footer {
 }
 header { background-image:url('../img/header.jpg'); }
 footer { background-image:url('../img/footer.jpg'); }
-.section { padding:90px;}
+.section { padding:90px; }
 .section-primary {}
 .section-secondary { background-color:#000000; }
 .section-default { background-color:#ffffff; }
@@ -43,15 +43,30 @@ footer { background-image:url('../img/footer.jpg'); }
 .block {
     width:100%;
     padding-bottom:100%;
-    background-color:#000;
+    position:relative;
+    background-size:cover;
+    background-position:center center;
 }
-.block-default {}
-.block-primary {}
+
+.block-default { background-color:#cccccc; }
+.block-primary { background-color:#222e43; }
+
+.block-inner {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    padding:15px;
+    color:#ffffff;
+    line-height:100px;
+}
 
 /* Navigation */
 
  .navigation {
      position:fixed;
+     z-index:99999;
      left:0;
      background-color:#000;
      width: 100vh;
@@ -114,13 +129,14 @@ footer { background-image:url('../img/footer.jpg'); }
 
 /* Text */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin-top:30px;
     margin-bottom:50px;
 }
 h1 { font-size:40px; }
 h2 { font-size:30px; }
 h3 { font-size:20px; }
+h4 { font-size:15px; }
 .section-secondary > h2 {
     color:#ffffff;
     text-shadow:1px 1px rgba(0,0,0,.5);
@@ -245,7 +261,7 @@ Media Queries / Desktop First
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-    body { padding-left:0px;}
+    body { padding-left:0px; }
 
     .navigation {
         -webkit-transform: none;
@@ -254,6 +270,8 @@ Media Queries / Desktop First
         -o-transform:      none;
         transform:         none;
     }
+
+    .section { padding:80px 30px; }
 
 }
 
