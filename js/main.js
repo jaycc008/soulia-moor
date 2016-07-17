@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// javascript
-    $("#sidebar-nav li").on("click", function(e){
+    $(".navbar-nav li").on("click", function(e){
         e.preventDefault();
 
 
