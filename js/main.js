@@ -18,4 +18,7 @@ $(document).ready(function(){
 
     })
 
+    var fo = new SWFObject("autoviewer.swf", "autoviewer", "100%", "500", "8", "#000000");
+    fo.write("flashcontent");
+
 });
