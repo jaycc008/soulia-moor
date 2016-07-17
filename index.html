@@ -30,35 +30,39 @@
 	<body>
 
 		<!-- Nagivation -->
-		<nav>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul id="sidebar-nav">
-					<li class="active">
-						<a href="#link-home">Home</a>
-					</li>
-					<li>
-						<a href="#link-werk">Werk</a>
-					</li>
-					<li>
-						<a href="#link-fotografie">Fotografie</a>
-					</li>
-					<li>
-						<a href="#link-expertises">Expertises</a>
-					</li>
-					<li>
-						<a href="#link-contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<div class="navigation">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a class="navbar-brand" href="#">Project name</a> -->
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#link-home">Home</a>
+						</li>
+						<li>
+							<a href="#link-werk">Werk</a>
+						</li>
+						<li>
+							<a href="#link-fotografie">Fotografie</a>
+						</li>
+						<li>
+							<a href="#link-expertise">Expertises</a>
+						</li>
+						<li>
+							<a href="#link-contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
 		<!-- Main -->
 		<div class="main">
 
@@ -97,9 +101,27 @@
 			</div>
 
 			<!-- Section 2 -->
-			<div class="section section-secondary" id="link-werk"></div>
+			<div class="section section-default section-right" id="link-werk">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="block">1</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="block">2</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="block">3</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="block">4</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Section 3 -->
+			<div class="section section-secondary" id="link-fotografie"></div>
+
+			<!-- Section 4 -->
 			<div class="section section-default" id="link-expertise">
 				<div class="row">
 					<div class="col-md-4 col-sm-6">
