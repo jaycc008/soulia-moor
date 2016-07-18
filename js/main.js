@@ -8,46 +8,62 @@ $(document).ready(function(){
         $(this).addClass("active");
 
         var link = $($(this).find("a"));
+        var top;
+
+        if($(link.attr("href")).selector == "#link-home"){
+            top = 0;
+        }else{
+            top = $(link.attr("href")).offset().top;
+        }
+
+
 
         $('html, body').animate({
-            scrollTop: $(link.attr("href")).offset().top
+            scrollTop: top
         }, 500);
 
-    })
+    });
+
+    var blue = false;
+
+    $("button.navbar-toggle").on("click", function(){
+        if(blue){
+            $(".navbar-header").css("background-color", "transparent");
+            blue = false;
+        }else{
+            $(".navbar-header").css("background-color", "#222e43");
+            blue = true;
+        }
+        $(this).find("div").toggleClass("cross hamburger");
+    });
+
+    $('.carousel').carousel({
+        interval: 3500,
+        pause: "false"
+    });
 
     // var lastScrollTop = 0;
     // var $navbar = $(".navbar-nav");
     // var navId = $navbar.find("li.active").data("nav");
-    // var prev = $($navbar.find("li.active").siblings()[navId - 1]).find("a").attr("href");
+    // var prev = $($navbar.find("li.active").siblings()[navId - 1]);
     // var next = $($navbar.find("li.active").siblings()[navId]);
 
     // var scrolling = false;
 
     // $(window).scroll(function(event){
 
-    //     prev = $($navbar.find("li.active").siblings()[navId - 1]).find("a").attr("href");
-
     //     var st = $(this).scrollTop();
     //     if (st > lastScrollTop){
-    //         $navbar.find("li.active").removeClass("active");
-    //         next.addClass("active");
-
-    //         if(scrolling){
-    //             setTimeout(function(){
-    //                 scrolling = false;
-    //             }, 510)
-    //             console.log(scrolling);
-    //         }else{
-    //             $('html, body').animate({
-    //                 scrollTop: $($(next).find("a").attr("href")).offset().top
-    //             }, 500);
-    //             scrolling = true;
-    //             console.log(scrolling);
-    //         }
-
+    //         next.trigger("click");
+    //         // $navbar.find("li.active").removeClass("active");
+    //         // next.addClass("active");
+    //         // down
 
     //     } else {
-    //         console.log('up');
+    //         prev.trigger("click");
+    //         // $navbar.find("li.active").removeClass("active");
+    //         // prev.addClass("active");
+    //         // up
     //     }
     //     lastScrollTop = st;
     // });

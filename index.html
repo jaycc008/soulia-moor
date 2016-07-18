@@ -36,18 +36,16 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<div class="hamburger"></div>
 					</button>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="index.html#link-home">Home</a>
+							<a href="#link-home">Home</a>
 						</li>
 						<li>
-							<a href="#link-overmij">About me</a>
+							<a href="#link-overmij">Over mij</a>
 						</li>
 						<li>
 							<a href="#link-werk">Werk</a>
@@ -68,33 +66,51 @@
 		<!-- Main -->
 		<div class="main">
 
-			<div id="header-carousel" class="carousel slide" data-ride="carousel">
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<header id="link-home" style="background-image:url('img/header.jpg');">
-						<h1 class="title">
-							<div class="skew">
-								<div class="skew-text">UX</div>
-							</div>
-							<div class="skew">
-								<div class="skew-text">Design</div>
-							</div>
-						</h1>
-					</header>
-				</div>
-				<div class="item">
-					<header id="link-home" style="background-image:url('img/header.jpg');">
-						<h1 class="title">
-							<div class="skew">
-								<div class="skew-text">UI</div>
-							</div>
-							<div class="skew">
-								<div class="skew-text">Design</div>
-							</div>
-						</h1>
-					</header>
+			<div id="header-carousel link-home" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				    <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#header-carousel" data-slide-to="1"></li>
+				    <li data-target="#header-carousel" data-slide-to="2"></li>
+				 </ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<header id="link-home" style="background-image:url('img/header1.jpg');">
+							<h1 class="title">
+								<div class="skew">
+									<div class="skew-text">UX</div>
+								</div>
+							</h1>
+							<h1 class="title nudge">
+								<div class="skew">
+									<div class="skew-text">Design</div>
+								</div>
+							</h1>
+						</header>
+					</div>
+					<div class="item">
+						<header style="background-image:url('img/header2.jpg');">
+							<h1 class="title">
+								<div class="skew">
+									<div class="skew-text">Visual</div>
+								</div>
+							</h1>
+							<h1 class="title nudge">
+								<div class="skew">
+									<div class="skew-text">Design</div>
+								</div>
+							</h1>
+						</header>
+					</div>
+					<div class="item">
+						<header class="extra-padding" style="background-image:url('img/header3.jpg');">
+							<h1 class="title">
+								<div class="skew">
+									<div class="skew-text">Fotografie</div>
+								</div>
+							</h1>
+						</header>
+					</div>
 				</div>
 			</div>
 
@@ -107,12 +123,12 @@
 					<div class="col-sm-6">
 						<h2>Hi.</h2>
 						<p>Leuk dat je mijn portfolio bezoekt! Mijn naam is Soulia Moor, ik kom uit Nootdorp en ik ben een UX Designer met de meeste ervaring in visual design. Naast het ontwerpen van websites en andere multimedia, vind ik het super leuk om te fotograferen! Bij expertises kunt u hier alles over lezen.</p>
-						<a class="btn btn-primary skew">
+						<a class="btn btn-primary skew" href="#link-werk">
 							<div class="skew-text">
 								Bekijk mijn werk
 							</div>
 						</a>
-						<a class="btn btn-default skew">
+						<a class="btn btn-primary skew" href="#link-expertise">
 							<div class="skew-text">
 								Bekijk mijn expertises
 							</div>
@@ -122,42 +138,48 @@
 			</div>
 
 			<!-- Section 2 -->
-			<div class="section section-default section-right" id="link-werk">
+			<div class="section section-default" id="link-werk">
 				<h2 class="hidden-sm hidden-md hidden-lg"><span class="highlight">/</span> Werk</h2>
 				<div class="row row-secondary">
 					<div class="col-sm-6 col-md-3">
-						<a href="detail.html">
+						<a href="portfolio-jayce.html">
 							<div class="block block-default" style="background-image:url('img/03_WORK_1.jpg')">
-								<div class="block-inner"></div>
-							</div>
-						</a>
-						<h4><span class="highlight">/</span> Title</h4>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<a href="detail.html">
-							<div class="block block-primary">
 								<div class="block-inner">
 									<h3 class="h2"><span class="highlight">/</span> Bekijk dit project</h3>
 								</div>
 							</div>
 						</a>
-						<h4><span class="highlight">/</span> Title</h4>
+						<h4 class="indent"><span class="highlight">/</span> Portfolio voor Jayce <span class="date">juni 2016</span></h4>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<a href="detail.html">
+						<a href="fme-community.html">
+							<div class="block block-primary" style="background-image:url('img/03_WORK_2.jpg')">
+								<div class="block-inner">
+									<h3 class="h2"><span class="highlight">/</span> Bekijk dit project</h3>
+								</div>
+							</div>
+						</a>
+						<h4 class="indent"><span class="highlight">/</span> FME Community voor leden <span class="date">september 2015</span></h4>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="pure-gerbera.html">
 							<div class="block block-default" style="background-image:url('img/03_WORK_3.jpg')">
-								<div class="block-inner"></div>
+								<div class="block-inner">
+									<h3 class="h2"><span class="highlight">/</span> Bekijk dit project</h3>
+								</div>
 							</div>
 						</a>
-						<h4><span class="highlight">/</span> Title</h4>
+						<h4 class="indent"><span class="highlight">/</span> Website voor Pure Gerbera <span class="date">juli 2015</span></h4>
 					</div>
 					<div class="col-sm-6 col-md-3">
-						<a href="detail.html">
+						<a href="afstudeerproject.html">
 							<div class="block block-default" style="background-image:url('img/03_WORK_4.jpg')">
-								<div class="block-inner"></div>
+								<div class="block-inner">
+									<h3 class="h2"><span class="highlight">/</span> Bekijk dit project</h3>
+								</div>
 							</div>
 						</a>
-						<h4><span class="highlight">/</span> Title</h4>
+						<h4 class="indent"><span class="highlight">/</span> Afstudeeropdracht bij Mirakuleus <span class="date">juni 2015</span></h4>
 					</div>
 				</div>
 				<div class="row">
@@ -177,7 +199,7 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-6">
 						<span class="icon icon-primary">
-							<i class="fa fa-user"></i>
+							<img src="img/ux.png">
 						</span>
 						<h3><span class="highlight">/</span> User Experience Design</h3>
 						<p class="hidden-xs">User experience design is één van de belangrijkste factoren als het aankomt op een goede gebruiksvriendelijke website. Ten eerste moet er goed nagedacht worden over het doel van de website, welke doelgroep ermee bereikt wordt en hoe de gebruiker denkt. Vervolgens moet er een website ontwikkeld worden, gebaseerd op human centured design. En tot slot moet de website goed getest worden.</p>
@@ -185,7 +207,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<span class="icon icon-primary">
-							<i class="fa fa-television"></i>
+							<img src="img/visual.png">
 						</span>
 						<h3><span class="highlight">/</span> Visual Design</h3>
 						<p class="hidden-xs">Om te beginnen kunnen er al veel designkeuzes worden gemaakt door creative concepting. Aan de hand van dit concept kan ik in Adobe Photoshop mooie webdesigns maken, waarbij het belangrijk is dat zowel de totale look and feel  als de vormgeving van elk uniek element klopt bij de behoeftes van de eindgebruiker. Hierbij is het belangrijk dat de doelgroep continue betrokken is bij het designproces.</p>
@@ -193,7 +215,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<span class="icon icon-primary">
-							<i class="fa fa-camera"></i>
+							<img src="img/foto.png">
 						</span>
 						<h3><span class="highlight">/</span> Photography</h3>
 						<p class="hidden-xs">Tegenwoordig ben ik me steeds meer aan het ontwikkelen op gebied van fotografie. Ik heb eind 2015 een Nikon  aangeschaft, waarmee ik er regelmatig een dagje op uit trek om wat foto’s te schieten. Ik wil me de komende tijd voornamelijk richten op potretfotografie, omdat ik gezichtsuitdrukkingen en emoties heel interessant vindt.</p>
@@ -205,9 +227,9 @@
 
 			<footer class="section-secondary text-center" id="link-contact">
                 <h2>soulia_moor@hotmail.com</h2>
-                <a href="http://www.pinterest.com"><span class="icon icon-default"><i class="fa fa-pinterest"></i></span></a>
-                <a href="http://www.linkedin.com"><span class="icon icon-default"><i class="fa fa-linkedin"></i></span></a>
-                <a href="http://www.facebook.com"><span class="icon icon-default"><i class="fa fa-facebook"></i></span></a>
+                <a href="https://nl.pinterest.com/souliamoor/"><span class="icon icon-default"><img src="img/pinterest.png"></span></a>
+                <a href="https://www.linkedin.com/in/soulia-moor-a99a1353"><span class="icon icon-default"><img src="img/linkedin.png"></span></a>
+                <a href="https://www.facebook.com/soulia.moor"><span class="icon icon-default"><img src="img/facebook.png"></span></a>
             </footer>
 
 		</div>
